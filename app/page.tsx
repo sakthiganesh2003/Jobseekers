@@ -52,7 +52,7 @@ export default function Jobseekers() {
   }, [name, skill, location, minExp, maxExp]);
 
   const handleDelete = async (id: number) => {
-    if (confirm('')) {
+    if (confirm('Are you sure you want to delete this jobseeker?')) {
       try {
         const res = await fetch(`/api/jobseekers/${id}`, { method: 'DELETE' });
         if (res.ok) {

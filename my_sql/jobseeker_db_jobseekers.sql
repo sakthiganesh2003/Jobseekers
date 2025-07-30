@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `jobseeker_db` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `jobseeker_db`;
 -- MySQL dump 10.13  Distrib 8.0.40, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: jobseeker_db
@@ -35,7 +33,7 @@ CREATE TABLE `jobseekers` (
   `createdAt` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +42,7 @@ CREATE TABLE `jobseekers` (
 
 LOCK TABLES `jobseekers` WRITE;
 /*!40000 ALTER TABLE `jobseekers` DISABLE KEYS */;
-INSERT INTO `jobseekers` VALUES (7,'kathir','sakthiganesh98@gmail.com','0987635212','d','ddd',1,'2025-07-30 05:27:05'),(9,'kathir','sakthiganesh@gmail.com','112233455445','d','ddd',1,'2025-07-30 05:28:48'),(10,'kathir','intern_sakthi.ganesh@gego.in','0987635212','d','dd',2,'2025-07-30 05:32:31'),(11,'sakthi','kathirkala@mailinator.com','0987635212','d','ddd',4,'2025-07-30 05:39:17'),(12,'ad','kasi@mailinator.com','112233455445','d','ddd',2,'2025-07-30 05:50:51'),(14,'kathirbaimaid','kathikala@mailinator.com','1234567890','d','ddd',2,'2025-07-30 06:08:22');
+INSERT INTO `jobseekers` VALUES (10,'kathir','intern_sakthi.ganesh@gego.in','09857635212','d','dd',2,'2025-07-30 05:32:31'),(11,'sakthi','kathirkala@mailinator.com','0987635212','d','ddd',4,'2025-07-30 05:39:17'),(12,'ad','kasi@mailinator.com','112233455445','d','ddd',2,'2025-07-30 05:50:51'),(14,'kathirbaimaid','kathikala@mailinator.com','1234567890','d','ddd',2,'2025-07-30 06:08:22'),(15,'kathir','kathirkalda@mailinator.com','1234567890','java','madurai',1,'2025-07-30 12:43:50'),(16,'ad','sakthiganesh45d1@gmail.com','0987635212','d','madurai',1,'2025-07-30 12:57:46'),(17,'babuaraa','babuaura@mailinator.com','8889840555','java','madurai',1,'2025-07-30 13:01:18');
 /*!40000 ALTER TABLE `jobseekers` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -57,4 +55,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-07-30 12:16:21
+-- Dump completed on 2025-07-30 18:37:08
